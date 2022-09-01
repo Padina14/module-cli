@@ -16,7 +16,16 @@ A Codeception module for testing basic shell commands and shell output.
 ```
 composer require "codeception/module-cli" --dev
 ```
-
+Make the Cli-Module availabel with your general YAML-Configuration or with the configuration for your tester like in this example:
+```
+actor: AcceptanceTester
+modules:
+    enabled:
+        - Asserts
+        - Cli
+        - WebDriver:
+  ...      
+```
 ## Documentation
 
 See [the module documentation](https://codeception.com/docs/modules/Cli).
